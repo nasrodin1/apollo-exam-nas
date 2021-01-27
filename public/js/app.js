@@ -1965,7 +1965,7 @@ function _asyncToGenerator(fn) { return function () { var self = this, args = ar
 
         for (var i = 0; i < text.length; i++) {
           origin = 90 - start + i * arcintval;
-          radius_mult = radius_mult - 0.0005;
+          radius_mult = radius_mult - 0.0001;
           radius = radius_mult * radius_wid;
           circleText.innerHTML += "<div style='height:".concat(radius, "px;position:absolute;transform:rotate(").concat(origin, "deg);transform-origin:0 100%'>").concat(text[i], "</div>");
         }
@@ -6522,7 +6522,7 @@ __webpack_require__.r(__webpack_exports__);
 
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_0___default()(function(i){return i[1]});
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "\np{\n    text-align: center;\n    margin: 0px;\n    width: 100%;\n    padding: 10px;\n}\n.btn{\n    background-color: #0462dd;\n    color: white;\n}\n.container- {\ndisplay         : flex;        /* Use 'flex' to centre on the screen */\nflex-direction  : row;\njustify-content : center;      /* Centre text  vertically  inside the logo */\nalign-items     : center;      /* Centre text horizontally inside the logo */\nmargin          : 0;\nwidth           : 100%;\nheight          : 100%;\n}\ndiv.circleText {\ntransform       : translateX(50%);\nwidth           : 800px;\nheight          : 800px;\n--start         :   -90;        /* Start of the arc (in degrees) */\n--end           :   500;        /*  End  of the arc (in degrees) */\n}\n@-webkit-keyframes rotate {\n0% {transform: rotateZ(  0deg);}\n100% {transform: rotateZ(360deg);}\n}\n@keyframes rotate {\n0% {transform: rotateZ(  0deg);}\n100% {transform: rotateZ(360deg);}\n}\n", ""]);
+___CSS_LOADER_EXPORT___.push([module.id, "\np{\n    text-align: center;\n    margin: 0px;\n    width: 100%;\n    padding: 10px;\n}\n.btn{\n    background-color: #0462dd;\n    color: white;\n}\n.container- {\ndisplay         : flex;        /* Use 'flex' to centre on the screen */\nflex-direction  : row;\njustify-content : center;      /* Centre text  vertically  inside the logo */\nalign-items     : center;      /* Centre text horizontally inside the logo */\nmargin          : 0;\nwidth           : 100%;\nheight          : 100%;\n}\ndiv.circleText {\ntransform       : translateX(50%);\nwidth           : 800px;\nheight          : 800px;\n--start         :   -90;        /* Start of the arc (in degrees) */\n--end           :   360;        /*  End  of the arc (in degrees) */\n}\n@-webkit-keyframes rotate {\n0% {transform: rotateZ(  0deg);}\n100% {transform: rotateZ(360deg);}\n}\n@keyframes rotate {\n0% {transform: rotateZ(  0deg);}\n100% {transform: rotateZ(360deg);}\n}\n", ""]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 

@@ -83,7 +83,7 @@
                     var radius_mult = 0.50;
                     for (let i = 0; i < text.length; i++) {
                         origin = 90 - start + (i * arcintval);
-                        radius_mult = radius_mult - 0.0005;
+                        radius_mult = radius_mult - 0.0001;
                         radius = radius_mult * radius_wid;
                         circleText.innerHTML += `<div style='height:${radius}px;position:absolute;transform:rotate(${origin}deg);transform-origin:0 100%'>${text[i]}</div>`;
                     }
@@ -127,7 +127,7 @@
     width           : 800px;
     height          : 800px;
     --start         :   -90;        /* Start of the arc (in degrees) */
-    --end           :   500;        /*  End  of the arc (in degrees) */
+    --end           :   360;        /*  End  of the arc (in degrees) */
     
     }
 

@@ -124,9 +124,9 @@ class HomeController extends Controller
                 foreach ($value->getBreakDowns as $k => $val) {
                     $breakdown = $breakdown . $val->values;
                 }
-                // $value->update([
-                //     'flag' => 1,
-                // ]);
+                $value->update([
+                    'flag' => 1,
+                ]);
             }
             return [
                 'succes' => true,
